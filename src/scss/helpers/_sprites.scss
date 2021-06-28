@@ -1,0 +1,31 @@
+.features__icon{
+  width: 90px;
+  height: 90px;
+  fill: $yellow;
+  transition: linear .2s;
+}
+
+.testimonials__icon{
+  width: 32px;
+  height: 32px;
+  fill: $yellow;
+  transition: linear .2s;
+}
+
+
+.faq__accordion-icon{
+  width: 20px;
+  height: 20px;
+  fill: $yellow;
+}
+
+.footer__icon{
+  width: 23px;
+  height: 23px;
+  fill: $yellow;
+  transition: linear .2s;
+
+  &:hover{
+    fill: $light;
+  }
+}

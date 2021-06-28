@@ -1,0 +1,63 @@
+.map{
+  padding: 65px 0;
+}
+
+.map__inner{
+  display: flex;
+}
+
+.map__box{
+  padding: 45px 70px 45px 130px;
+  background-color: $light;
+  width: auto;
+  position: relative;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.map__wrap{
+  margin-bottom: 1.8rem;
+}
+
+.map__links{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.map__link-box{
+  margin-bottom: 0.8rem;
+}
+
+.map__link{
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: linear .2s;
+  color: rgba(#000, .5);
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba($yellow, .3);
+    border: 1px solid $yellow;
+    border-top-color: transparent;
+    transition: linear .2s;
+    z-index: -1;
+  }
+
+  &:hover{
+    color: #000;
+
+    &::before{
+      height: 100%;
+      border-top-color: $yellow;
+    }
+  }
+}

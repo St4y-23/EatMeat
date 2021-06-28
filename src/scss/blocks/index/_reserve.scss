@@ -1,0 +1,41 @@
+.reserve__inner{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 42px 0 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserve__image-box{
+  position: relative;
+  margin: 0 5%;
+}
+
+.reserve__rect,
+.reserve__image{
+  width: 615px;
+  height: 510px;
+}
+
+.reserve__box{
+  text-align: center;
+  margin: 0 5%;
+}
+
+.reserve__box-title{
+  font-size: 3rem;
+  font-weight: 500;
+  color: $light;
+  margin-bottom: 3rem;
+}
+
+.reserve__box-text{
+  line-height: 1.3;
+  color: $light;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  max-width: 450px;
+  text-align: center;
+}

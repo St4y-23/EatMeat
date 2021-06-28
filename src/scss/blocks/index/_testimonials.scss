@@ -1,0 +1,93 @@
+.testimonials{
+  padding-top: 75px;
+}
+
+.testimonials__inner{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__title{
+  color: $light;
+}
+
+.testimonials__slider{
+  margin: 60px auto 40px;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.testimonials__item{
+  position: relative;
+  padding: 25px 35px 40px 20px;
+  background-color: #353435;
+  border-radius: 20px;
+}
+
+.testimonials__icon{
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.testimonials__item-name{
+  color: $light;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials__item-location{
+  color: $light;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials__item-text{
+  color: $yellow;
+  line-height: 1.3;
+}
+
+.testimonials__item-images{
+  display: flex;
+  width: 100%;
+  margin: 50px -6px 0;
+}
+
+.testimonials__item-image-box{
+  width: 100px;
+  height: 100px;
+  margin: 0 6px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.testimonials__item-image{
+  z-index: 1;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid $yellow;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: $yellow;
+}

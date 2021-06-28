@@ -1,0 +1,40 @@
+$text: #000;
+$yellow: #e8be7f;
+$light: #fbf8f4;
+
+
+@mixin center{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// Fonts
+@mixin gilroy300{
+  font-family: 'Gilroy';
+  font-weight: 300;
+}
+
+@mixin gilroy400{
+  font-family: 'Gilroy';
+  font-weight: 400;
+}
+
+@mixin gilroy500{
+  font-family: 'Gilroy';
+  font-weight: 500;
+}
+
+@mixin gilroy700{
+  font-family: 'Gilroy';
+  font-weight: 700;
+}
+
+
+@mixin goodVibes{
+  font-family: 'Good Vibes Pro';
+  font-weight: 400;
+}
+
+

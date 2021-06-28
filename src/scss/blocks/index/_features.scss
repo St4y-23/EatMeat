@@ -1,0 +1,35 @@
+.features{
+  margin-top: -40px;
+  width: 100%;
+  height: auto;
+  padding: 110px 0 70px;
+}
+
+.features__inner{
+  max-width: 65%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.features__items{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.features__item{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.features__item-icon{
+  margin-bottom: 1.9rem;
+}
+
+.features__item-name{
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: $light;
+}

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./blocks/_head.html')
+
+<body>
+	<div class="content">
+
+		<div id="preloader">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="preloader__bg"></div>
+
+		<!-- Sprites -->
+		@@include('./blocks/_sprites.html')
+
+		<!-- Header -->
+		@@include('./blocks/_header.html')
+
+
+		<!-- Intro -->
+		<section class="intro">
+
+			<div class="intro__image">
+				<picture>
+					<source srcset="img/intro.webp" type="image/webp">
+					<img src="img/intro.jpg" alt="">
+				</picture>
+			</div>
+
+			<div class="container">
+
+				<div class="intro__inner">
+
+					<div class="intro__box">
+						<div class="intro__hidden intro__hidden-title">
+							<h1 class="intro__title">Добро пожаловать <br> в ресторан <span>Eat Meat</span></h1>
+						</div>
+						<div class="intro__hidden intro__hidden-text">
+							<div class="intro__text">У нас лучшие стейки в Санкт-Петербурге</div>
+						</div>
+						<div class="intro__hidden">
+							<div class="intro__btn-box btn__box"><a class="intro__btn btn" href="#">Забронировать</a></div>
+						</div>
+					</div>
+
+					<div class="intro__info-box">
+						<p class="intro__info">Мы работаем каждый день с 10:00 до 23:00</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- About -->
+		<section class="about" id="about">
+			<div class="about__inner">
+
+				<div class="about__box">
+
+					<div class="about__wrap wrap">
+						<div class="about__wrap-shadow shadow">О нашем</div>
+						<div class="about__wrap-suptitle suptitle">О нашем</div>
+						<div class="about__wrap-title title">ресторане</div>
+					</div>
+
+					<p class="about__box-text text">В ресторане Eat Meat вы попробуете лучшие стейки в Санкт-Петербурге, мы
+						предлагаем большой ассортимент стейков и алкогольных напитков. Так же в меню есть основные блюда, супы,
+						десерты и многое другое.</p>
+					<p class="about__box-text text">Вы можете заказать стейки из различных видов мяса и рыбы. У нас имеется
+						большой выбор алкогольных и безалкогольных напитков. Из алкогольного ассортимента мы предлагаем лучшие
+						красные, белые, игристые вина, домашний ароматный коньяк, качественный виски, а так же множество сортов
+						пива.</p>
+
+				</div>
+
+				<div class="about__image-box scrollAnim">
+					<div class="about__rect rect"></div>
+					<div class="about__image cover">
+						<picture>
+							<source srcset="img/about.webp" type="image/webp">
+							<img src="img/about" alt="">
+						</picture>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- Features -->
+		<section class="features">
+
+			<div class="features__bg bg">
+				<div class="dark"></div>
+				<picture>
+					<source srcset="img/features.webp" type="image/webp">
+					<img src="img/features.jpg" alt="">
+				</picture>
+			</div>
+
+			<div class="features__inner">
+
+				<div class="features__items">
+
+					<div class="features__item scrollAnim">
+
+						<div class="features__item-icon">
+							<svg class="features__icon">
+								<use xlink:href="#menu"></use>
+							</svg>
+						</div>
+
+						<div class="features__item-name">Большой выбор стейков и напитков на любой вкус</div>
+
+					</div>
+
+					<div class="features__item scrollAnim">
+
+						<div class="features__item-icon">
+							<svg class="features__icon">
+								<use xlink:href="#tray"></use>
+							</svg>
+						</div>
+
+						<div class="features__item-name">Индивидуальный подход к каждому клиенту</div>
+
+					</div>
+
+					<div class="features__item scrollAnim">
+
+						<div class="features__item-icon">
+							<svg class="features__icon">
+								<use xlink:href="#chef"></use>
+							</svg>
+						</div>
+
+						<div class="features__item-name">Для вас готовят лучшие шеф-повары города</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- Hits -->
+		<section class="hits" id="hits">
+			<div class="container">
+
+				<div class="hits__box">
+
+					<div class="hits__wrap wrap">
+						<div class="hits__wrap-shadow shadow">Хиты</div>
+						<div class="hits__wrap-suptitle suptitle">Хиты</div>
+						<div class="hits__wrap-title title">этого месяца</div>
+					</div>
+
+					<p class="hits__box-text text">Вы можете сделать онлайн предзаказ на все блюда и напитки на удобную вам дату и
+						время</p>
+
+				</div>
+
+				<div class="hits__inner">
+
+					<div class="hits__items">
+
+						<div class="hits__item-box scrollAnim">
+							<div class="hits__item">
+								<div class="hits__item-image">
+									<picture>
+										<source srcset="img/dish_01.webp" type="image/webp">
+										<img src="img/dish_01.jpg" alt="">
+									</picture>
+								</div>
+								<div class="hits__item-tab">Хит</div>
+								<div class="hits__item-wrapper">
+									<div class="hits__item-name">Чак ролл</div>
+									<p class="hits__item-text">Многогранный вкус, сочность и высокая мраморность, идеален в прожарке
+										medium.</p>
+									<div class="hits__item-price">300г <span>1990р.</span></div>
+									<a class="hits__item-link" href="#">Заказать</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="hits__item-box scrollAnim">
+							<div class="hits__item">
+								<div class="hits__item-image">
+									<picture>
+										<source srcset="img/dish_02.webp" type="image/webp">
+										<img src="img/dish_02.jpg" alt="">
+									</picture>
+								</div>
+								<div class="hits__item-tab">Хит</div>
+								<div class="hits__item-wrapper">
+									<div class="hits__item-name">Чак ролл</div>
+									<p class="hits__item-text">Многогранный вкус, сочность и высокая мраморность, идеален в прожарке
+										medium.</p>
+									<div class="hits__item-price">300г <span>1990р.</span></div>
+									<a class="hits__item-link" href="#">Заказать</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="hits__item-box scrollAnim">
+							<div class="hits__item">
+								<div class="hits__item-image">
+									<picture>
+										<source srcset="img/dish_03.webp" type="image/webp">
+										<img src="img/dish_03.jpg" alt="">
+									</picture>
+								</div>
+								<div class="hits__item-tab">Хит</div>
+								<div class="hits__item-wrapper">
+									<div class="hits__item-name">Чак ролл</div>
+									<p class="hits__item-text">Многогранный вкус, сочность и высокая мраморность, идеален в прожарке
+										medium.</p>
+									<div class="hits__item-price">300г <span>1990р.</span></div>
+									<a class="hits__item-link" href="#">Заказать</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="hits__item-box scrollAnim">
+							<div class="hits__item">
+								<div class="hits__item-image">
+									<picture>
+										<source srcset="img/dish_04.webp" type="image/webp">
+										<img src="img/dish_04.jpg" alt="">
+									</picture>
+								</div>
+								<div class="hits__item-tab">Хит</div>
+								<div class="hits__item-wrapper">
+									<div class="hits__item-name">Чак ролл</div>
+									<p class="hits__item-text">Многогранный вкус, сочность и высокая мраморность, идеален в прожарке
+										medium.</p>
+									<div class="hits__item-price">300г <span>1990р.</span></div>
+									<a class="hits__item-link" href="#">Заказать</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="hits__item-box scrollAnim">
+							<div class="hits__item">
+								<div class="hits__item-image">
+									<picture>
+										<source srcset="img/dish_01.webp" type="image/webp">
+										<img src="img/dish_01.jpg" alt="">
+									</picture>
+								</div>
+								<div class="hits__item-tab">Хит</div>
+								<div class="hits__item-wrapper">
+									<div class="hits__item-name">Чак ролл</div>
+									<p class="hits__item-text">Многогранный вкус, сочность и высокая мраморность, идеален в прожарке
+										medium.</p>
+									<div class="hits__item-price">300г <span>1990р.</span></div>
+									<a class="hits__item-link" href="#">Заказать</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="hits__item-box scrollAnim">
+							<div class="hits__item">
+								<div class="hits__item-image">
+									<picture>
+										<source srcset="img/dish_02.webp" type="image/webp">
+										<img src="img/dish_02.jpg" alt="">
+									</picture>
+								</div>
+								<div class="hits__item-tab">Хит</div>
+								<div class="hits__item-wrapper">
+									<div class="hits__item-name">Чак ролл</div>
+									<p class="hits__item-text">Многогранный вкус, сочность и высокая мраморность, идеален в прожарке
+										medium.</p>
+									<div class="hits__item-price">300г <span>1990р.</span></div>
+									<a class="hits__item-link" href="#">Заказать</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="hits__btn-box center"><a class="hits__btn btn btn--dark" href="#">Смотреть полное меню</a></div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- Reserva -->
+		<section class="reserve">
+
+			<div class="reserve__bg bg">
+				<div class="dark"></div>
+				<picture>
+					<source srcset="img/dish_04.webp" type="image/webp">
+					<img src="img/dish_04.jpg" alt="">
+				</picture>
+			</div>
+
+			<div class="reserve__inner">
+
+				<div class="reserve__image-box scrollAnim">
+					<div class="reserve__rect rect"></div>
+					<div class="reserve__image cover">
+						<picture>
+							<source srcset="img/reserve.webp" type="image/webp">
+							<img src="img/reserve.jpg" alt="">
+						</picture>
+					</div>
+				</div>
+
+				<div class="reserve__box">
+					<div class="reserve__box-title scrollAnim">Бронирование столиков онлайн</div>
+					<p class="reserve__box-text scrollAnim">Всего за пару минут вы можете зарезервировать столик онлайн в любом из наших
+						ресторанов</p>
+					<a class="reserve__box-btn btn" href="#">Забронировать столик</a>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- Team -->
+		<section class="team" id="team">
+			<div class="container">
+
+				<div class="team__wrap wrap">
+					<div class="team__wrap-shadow shadow">Наша</div>
+					<div class="team__wrap-suptitle suptitle">Наша</div>
+					<div class="team__wrap-title title">команда</div>
+				</div>
+
+				<div class="team__inner">
+
+					<div class="team__primary">
+
+						<div class="team__slider swiper-container mySwiper2">
+							<div class="swiper-wrapper">
+
+								<div class="team__slide swiper-slide">
+									<div class="team__wrapper">
+
+										<div class="team__photo scrollAnim">
+											<div class="team__image cover">
+												<picture>
+													<source srcset="img/chef.webp" type="image/webp">
+													<img src="img/chef.jpg" alt="">
+												</picture>
+											</div>
+										</div>
+
+										<div class="team__box">
+											<div class="team__box-name scrollAnim">Сергей Исаев</div>
+											<div class="team__box-prof scrollAnim">Шеф повар, топ 10 Санкт-Петербурга</div>
+											<p class="team__box-text scrollAnim">Творить - значит не копировать или подражать. Кулинария - это язык, с
+												помощью которого можно передать гармонию, счастье, красоту, сложность, поэзию, волшебство, юмор,
+												провокацию, культуру - в общем, все, из чего складывается наша жизнь.</p>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="team__slide swiper-slide">
+									<div class="team__wrapper">
+
+										<div class="team__photo scrollAnim">
+											<div class="team__image cover">
+												<picture>
+													<source srcset="img/manager_01.webp" type="image/webp">
+													<img src="img/manager_01.jpg" alt="">
+												</picture>
+											</div>
+										</div>
+
+										<div class="team__box">
+											<div class="team__box-name scrollAnim">Олег Зарубин</div>
+											<div class="team__box-prof scrollAnim">Управляющий менеджер</div>
+											<div class="team__box-icon"></div>
+											<p class="team__box-text scrollAnim">Творить - значит не копировать или подражать. Кулинария - это язык, с
+												помощью которого можно передать гармонию, счастье, красоту, сложность, поэзию, волшебство, юмор,
+												провокацию, культуру - в общем, все, из чего складывается наша жизнь.</p>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="team__slide swiper-slide">
+									<div class="team__wrapper">
+
+										<div class="team__photo scrollAnim">
+											<div class="team__image cover">
+												<picture>
+													<source srcset="img/manager_02.webp" type="image/webp">
+													<img src="img/manager_02.jpg" alt="">
+												</picture>
+											</div>
+										</div>
+
+										<div class="team__box">
+											<div class="team__box-name scrollAnim">Наталия Бойко</div>
+											<div class="team__box-prof scrollAnim">PR менеджер</div>
+											<div class="team__box-icon"></div>
+											<p class="team__box-text scrollAnim">Творить - значит не копировать или подражать. Кулинария - это язык, с
+												помощью которого можно передать гармонию, счастье, красоту, сложность, поэзию, волшебство, юмор,
+												провокацию, культуру - в общем, все, из чего складывается наша жизнь.</p>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="team__second">
+
+						<div class="team__thumbSlider swiper-container mySwiper" thumbsSlider="">
+							<div class="team__thumbSlider-wrapper swiper-wrapper">
+
+								<div class="team__thumbSlide swiper-slide">
+
+									<div class="team__thumbSlide-box">
+
+										<div class="team__item scrollAnim">
+											<div class="team__item-image cover">
+												<picture>
+													<source srcset="img/chef.webp" type="image/webp">
+													<img src="img/chef.jpg" alt="">
+												</picture>
+											</div>
+											<div class="team__item-wrapper">
+												<div class="team__item-name">Сергей Исаев</div>
+												<div class="team__item-prof">Шеф повар</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="team__thumbSlide swiper-slide">
+
+									<div class="team__thumbSlide-box">
+
+										<div class="team__item scrollAnim">
+											<div class="team__item-image cover">
+												<picture>
+													<source srcset="img/manager_01.webp" type="image/webp">
+													<img src="img/manager_01.jpg" alt="">
+												</picture>
+											</div>
+											<div class="team__item-wrapper">
+												<div class="team__item-name">Олег Зарубин</div>
+												<div class="team__item-prof">Управляющий менеджер</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="team__thumbSlide swiper-slide">
+
+									<div class="team__thumbSlide-box">
+
+										<div class="team__item scrollAnim">
+											<div class="team__item-image cover">
+												<picture>
+													<source srcset="img/manager_02.webp" type="image/webp">
+													<img src="img/manager_02.jpg" alt="">
+												</picture>
+											</div>
+											<div class="team__item-wrapper">
+												<div class="team__item-name">Наталия Бойко</div>
+												<div class="team__item-prof">PR менеджер</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="team__slider-btn-next swiper-button-next scrollAnim"></div>
+							<div class="team__slider-btn-prev swiper-button-prev scrollAnim"></div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- Events -->
+		<section class="events">
+
+			<div class="events__bg bg">
+				<div class="dark"></div>
+				<picture>
+					<source srcset="img/features.webp" type="image/webp">
+					<img src="img/features.jpg" alt="">
+				</picture>
+			</div>
+
+			<!-- Events__inner -->
+			<div class="events__inner">
+
+				<div class="events__wrap wrap">
+					<div class="events__shadow shadow">Наши</div>
+					<div class="events__suptitle suptitle">Наши</div>
+					<div class="events__title title">мероприятия</div>
+				</div>
+
+				<div class="events__items">
+
+					<div class="events__item-box scrollAnim">
+						<div class="events__item">
+							<div class="events__item-image bg">
+								<picture>
+									<source srcset="img/beer.webp" type="image/webp">
+									<img src="img/beer.jpg" alt="">
+								</picture>
+							</div>
+							<div class="events__item-tab">Ближайшее</div>
+							<div class="events__item-wrapper">
+								<div class="events__item-title">День пива</div>
+								<div class="events__item-time">7-9 августа, с 18:00 до 23:00</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="events__item-box scrollAnim">
+						<div class="events__item">
+							<div class="events__item-image bg">
+								<picture>
+									<source srcset="img/master_class.webp" type="image/webp">
+									<img src="img/master_class.jpg" alt="">
+								</picture>
+							</div>
+							<div class="events__item-tab">Ближайшее</div>
+							<div class="events__item-wrapper">
+								<div class="events__item-title">Мастер класс по стейкам</div>
+								<div class="events__item-time">23 августа, с 17:00 до 18:30</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="events__item-box scrollAnim">
+						<div class="events__item">
+							<div class="events__item-image bg">
+								<picture>
+									<source srcset="img/music.webp" type="image/webp">
+									<img src="img/music.jpg" alt="">
+								</picture>
+							</div>
+							<div class="events__item-tab">Ближайшее</div>
+							<div class="events__item-wrapper">
+								<div class="events__item-title">Живая музыка</div>
+								<div class="events__item-time">Каждая пятница, с 19:00 до 23:00</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="center"><a class="events__btn btn btn--dark" href="#">Посмотреть все</a></div>
+
+			</div>
+
+
+			<!-- Testimonials -->
+			<div class="testimonials" id="testi">
+
+				<div class="container">
+
+					<div class="testimonials__inner">
+
+						<div class="testimonials__wrap wrap">
+							<div class="testimonials__shadow shadow">Отзывы</div>
+							<div class="testimonials__suptitle suptitle">Отзывы</div>
+							<div class="testimonials__title title">наших клиентов</div>
+						</div>
+
+						<div class="testimonials__slider swiper-container">
+							<div class="swiper-wrapper">
+
+								<div class="testimonials__slide swiper-slide scrollAnim">
+									<div class="testimonials__item">
+										<div class="testimonials__item-icon">
+											<svg class="testimonials__icon">
+												<use xlink:href="#vk"></use>
+											</svg>
+										</div>
+										<div class="testimonials__item-name">Schurkate</div>
+										<div class="testimonials__item-location">Санкт-Петербург, Россия</div>
+										<div class="testimonials__item-text">Мне понравилось абсолютно всё!!! Особенно, что касается кухни!
+											понравилось оформление меню,интерьер, атмосфера, наличие летней веранды и т.д. После заказа салата
+											я поняла, что хочу попробовать здесь всё самое вкусное, и налопалась от души! Заказала салат с
+											овощами и мягким нежным сыром,классический ролл Филадельфия и стейк из свинины. Я бы попробовала и
+											десерт, но моего желудка на это уже просто не хватило)))</div>
+										<div class="testimonials__item-images">
+											<div class="testimonials__item-image-box">
+												<div class="testimonials__item-image bg">
+													<picture>
+														<source srcset="img/dish_04.webp" type="image/webp">
+														<img src="img/dish_04.jpg" alt="">
+													</picture>
+												</div>
+											</div>
+
+											<div class="testimonials__item-image-box">
+												<div class="testimonials__item-image bg">
+													<picture>
+														<source srcset="img/dish_02.webp" type="image/webp">
+														<img src="img/dish_02.jpg" alt="">
+													</picture>
+												</div>
+											</div>
+
+											<div class="testimonials__item-image-box">
+												<div class="testimonials__item-image bg">
+													<picture>
+														<source srcset="img/dish_01.webp" type="image/webp">
+														<img src="img/dish_01.jpg" alt="">
+													</picture>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slide swiper-slide scrollAnim">
+									<div class="testimonials__item">
+										<div class="testimonials__item-icon">
+											<svg class="testimonials__icon">
+												<use xlink:href="#vk"></use>
+											</svg>
+										</div>
+										<div class="testimonials__item-name">Schurkate</div>
+										<div class="testimonials__item-location">Санкт-Петербург, Россия</div>
+										<div class="testimonials__item-text">Мне понравилось абсолютно всё!!! Особенно, что касается кухни!
+											понравилось оформление меню,интерьер, атмосфера, наличие летней веранды и т.д. После заказа салата
+											я поняла, что хочу попробовать здесь всё самое вкусное, и налопалась от души! Заказала салат с
+											овощами и мягким нежным сыром,классический ролл Филадельфия и стейк из свинины. Я бы попробовала и
+											десерт, но моего желудка на это уже просто не хватило)))</div>
+										<div class="testimonials__item-images">
+											<div class="testimonials__item-image-box">
+												<div class="testimonials__item-image bg">
+													<picture>
+														<source srcset="img/dish_03.webp" type="image/webp">
+														<img src="img/dish_03.jpg" alt="">
+													</picture>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slide swiper-slide scrollAnim">
+									<div class="testimonials__item">
+										<div class="testimonials__item-icon">
+											<svg class="testimonials__icon">
+												<use xlink:href="#vk"></use>
+											</svg>
+										</div>
+										<div class="testimonials__item-name">Schurkate</div>
+										<div class="testimonials__item-location">Санкт-Петербург, Россия</div>
+										<div class="testimonials__item-text">Мне понравилось абсолютно всё!!! Особенно, что касается кухни!
+											понравилось оформление меню,интерьер, атмосфера, наличие летней веранды и т.д. После заказа салата
+											я поняла, что хочу попробовать здесь всё самое вкусное, и налопалась от души! Заказала салат с
+											овощами и мягким нежным сыром,классический ролл Филадельфия и стейк из свинины. Я бы попробовала и
+											десерт, но моего желудка на это уже просто не хватило)))</div>
+										<div class="testimonials__item-images">
+											<div class="testimonials__item-image-box">
+												<div class="testimonials__item-image bg">
+													<picture>
+														<source srcset="img/dish_04.webp" type="image/webp">
+														<img src="img/dish_04.jpg" alt="">
+													</picture>
+												</div>
+											</div>
+
+											<div class="testimonials__item-image-box">
+												<div class="testimonials__item-image bg">
+													<picture>
+														<source srcset="img/dish_02.webp" type="image/webp">
+														<img src="img/dish_02.jpg" alt="">
+													</picture>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="testimonials__slide swiper-slide scrollAnim">
+									<div class="testimonials__item">
+										<div class="testimonials__item-icon">
+											<svg class="testimonials__icon">
+												<use xlink:href="#vk"></use>
+											</svg>
+										</div>
+										<div class="testimonials__item-name">Schurkate</div>
+										<div class="testimonials__item-location">Санкт-Петербург, Россия</div>
+										<div class="testimonials__item-text">Мне понравилось абсолютно всё!!! Особенно, что касается кухни!
+											понравилось оформление меню,интерьер, атмосфера, наличие летней веранды и т.д. После заказа салата
+											я поняла, что хочу попробовать здесь всё самое вкусное, и налопалась от души! Заказала салат с
+											овощами и мягким нежным сыром,классический ролл Филадельфия и стейк из свинины. Я бы попробовала и
+											десерт, но моего желудка на это уже просто не хватило)))</div>
+										<div class="testimonials__item-images">
+											<div class="testimonials__item-image-box">
+												<div class="testimonials__item-image bg">
+													<picture>
+														<source srcset="img/dish_01.webp" type="image/webp">
+														<img src="img/dish_01.jpg" alt="">
+													</picture>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="testimonials__pagination swiper-pagination scrollAnim"></div>
+
+						</div>
+
+						<div class="center"><a class="testimonials__btn btn" href="#">Оставить отзыв</a></div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- faq -->
+		<section class="faq">
+			<div class="container">
+
+				<div class="faq__inner">
+
+					<div class="faq__box">
+
+						<div class="faq__wrap wrap">
+							<div class="faq__shadow shadow">Часто</div>
+							<div class="faq__suptitle suptitle">Часто</div>
+							<div class="faq__title title">задаваемые вопросы</div>
+						</div>
+
+						<div class="faq__accordion-box">
+
+							<div class="faq__accordion active scrollAnim">
+								<div class="faq__accordion-tab active">
+									<div class="faq__accordion-title">Что особенного в вашем мясе?</div>
+									<div class="faq__accordion-arrow">
+										<svg class="faq__accordion-icon">
+											<use xlink:href="#arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="faq__accordion-content">
+									<p class="faq__accordion-text">Тонкости вкуса и качества мяса скрыты внутри и могут быть незаметны до
+										того момента, как мясо попадает к вам на тарелку. Мы обращаем внимание на такие параметры, как
+										чистота породы, натуральность, длительность и качество зернового откорма, степень мраморности,
+										правильная выдержка и нарезка.</p>
+									<p class="faq__accordion-text">Мы всегда пробуем сами то, что продаем и продаем только то, что
+										действительно вкусно. Поэтому, выбирая любое мясо в Eat Meat вы можете быть абсолютно уверены в его
+										качестве.</p>
+								</div>
+							</div>
+
+							<div class="faq__accordion scrollAnim">
+								<div class="faq__accordion-tab">
+									<div class="faq__accordion-title">Почему такое дорогое?</div>
+									<div class="faq__accordion-arrow">
+										<svg class="faq__accordion-icon">
+											<use xlink:href="#arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="faq__accordion-content">
+									<p class="faq__accordion-text">Тонкости вкуса и качества мяса скрыты внутри и могут быть незаметны до
+										того момента, как мясо попадает к вам на тарелку. Мы обращаем внимание на тиакие параметры, как
+										чистота породы, натуральность, длительность и качество зернового откорма, степень мраморности,
+										правильная выдержка и нарезка.</p>
+									<p class="faq__accordion-text">Мы всегда пробуем сами то, что продаем и продаем только то, что
+										действительно вкусно. Поэтому, выбирая любое мясо в Eat Meat вы можете быть абсолютно уверены в его
+										качестве.</p>
+								</div>
+							</div>
+
+							<div class="faq__accordion scrollAnim">
+								<div class="faq__accordion-tab">
+									<div class="faq__accordion-title">Что такое мраморность мяса?</div>
+									<div class="faq__accordion-arrow">
+										<svg class="faq__accordion-icon">
+											<use xlink:href="#arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="faq__accordion-content">
+									<p class="faq__accordion-text">Тонкости вкуса и качества мяса скрыты внутри и могут быть незаметны до
+										того момента, как мясо попадает к вам на тарелку. Мы обращаем внимание на тиакие параметры, как
+										чистота породы, натуральность, длительность и качество зернового откорма, степень мраморности,
+										правильная выдержка и нарезка.</p>
+									<p class="faq__accordion-text">Мы всегда пробуем сами то, что продаем и продаем только то, что
+										действительно вкусно. Поэтому, выбирая любое мясо в Eat Meat вы можете быть абсолютно уверены в его
+										качестве.</p>
+								</div>
+							</div>
+
+							<div class="faq__accordion scrollAnim">
+								<div class="faq__accordion-tab">
+									<div class="faq__accordion-title">Нужно ли оставлять вознаграждение официанту?</div>
+									<div class="faq__accordion-arrow">
+										<svg class="faq__accordion-icon">
+											<use xlink:href="#arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="faq__accordion-content">
+									<p class="faq__accordion-text">Тонкости вкуса и качества мяса скрыты внутри и могут быть незаметны до
+										того момента, как мясо попадает к вам на тарелку. Мы обращаем внимание на тиакие параметры, как
+										чистота породы, натуральность, длительность и качество зернового откорма, степень мраморности,
+										правильная выдержка и нарезка.</p>
+									<p class="faq__accordion-text">Мы всегда пробуем сами то, что продаем и продаем только то, что
+										действительно вкусно. Поэтому, выбирая любое мясо в Eat Meat вы можете быть абсолютно уверены в его
+										качестве.</p>
+								</div>
+							</div>
+
+							<div class="faq__accordion scrollAnim">
+								<div class="faq__accordion-tab">
+									<div class="faq__accordion-title">Что такое бонусная карта постоянного клиента?</div>
+									<div class="faq__accordion-arrow">
+										<svg class="faq__accordion-icon">
+											<use xlink:href="#arrow"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="faq__accordion-content">
+									<p class="faq__accordion-text">Тонкости вкуса и качества мяса скрыты внутри и могут быть незаметны до
+										того момента, как мясо попадает к вам на тарелку. Мы обращаем внимание на тиакие параметры, как
+										чистота породы, натуральность, длительность и качество зернового откорма, степень мраморности,
+										правильная выдержка и нарезка.</p>
+									<p class="faq__accordion-text">Мы всегда пробуем сами то, что продаем и продаем только то, что
+										действительно вкусно. Поэтому, выбирая любое мясо в Eat Meat вы можете быть абсолютно уверены в его
+										качестве.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="btn__box"><a class="faq__accordion-btn btn btn--dark" href="#">Задать вопрос</a></div>
+
+					</div>
+
+					<div class="faq__image-box scrollAnim">
+						<div class="faq__rect rect"></div>
+						<div class="faq__image cover">
+							<picture>
+								<source srcset="img/dish_03.webp" type="image/webp">
+								<img src="img/dish_03.jpg" alt="">
+							</picture>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- Map -->
+		<section class="map" id="map">
+			<div class="map__inner">
+
+				<div class="map__bg bg">
+					<picture>
+						<source srcset="img/map.webp" type="image/webp">
+						<img src="img/map.jpg" alt="">
+					</picture>
+				</div>
+
+				<div class="map__box">
+
+					<div class="map__wrap wrap">
+						<div class="map__shadow shadow">Мы</div>
+						<div class="map__suptitle suptitle">Мы</div>
+						<div class="map__title title">находимся</div>
+					</div>
+
+					<div class="map__links">
+						<div class="map__link-box scrollAnim"><a class="map__link" href="#">Санкт-Петербург, ул. Ленина, 16</a></div>
+						<div class="map__link-box scrollAnim"><a class="map__link" href="#">Санкт-Петербург, Зеневский пр-т, 47а</a></div>
+						<div class="map__link-box scrollAnim"><a class="map__link" href="#">Санкт-Петербург, ул. Марата, 34</a></div>
+					</div>
+
+					<p class="map__text">Рядом есть бесплатные парковки</p>
+
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+		<!-- Footer -->
+		@@include('./blocks/_footer.html')
+
+
+		<!-- Scripts -->
+		<script src="js/libs.min.js"></script>
+		@@include('./blocks/_scripts.html')
+		<script src="js/main.min.js"></script>
+	</div>
+</body>
+
+</html>
+
+
+<!-- 
+	<picture>
+		<source class="img" srcset="img/intro/logo.webp" type="image/webp">
+		<img class="img" src="img/intro/logo.png" alt="">
+	</picture>
+ -->

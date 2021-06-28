@@ -1,0 +1,78 @@
+.intro{
+  width: 100%;
+  height: 85vh;
+  padding-bottom: 40px;
+}
+
+.intro__image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.intro__inner{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  max-width: 760px;
+}
+
+.intro__box{
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__hidden{
+  position: relative;
+  overflow: hidden;
+}
+
+.intro__hidden-title{
+  margin-bottom: 2.5rem;
+}
+
+.intro__title{
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+
+  span{
+    @include  goodVibes;
+    color: $yellow;
+  }
+}
+
+.intro__hidden-text{
+  margin-bottom: 5rem;
+}
+
+.intro__text{
+  font-size: 1.6rem;
+  font-style: italic;
+  color: $light;
+}
+
+.intro__info-box{
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  overflow: hidden;
+}
+
+.intro__info{
+  font-size: 1.3rem;
+  color: $light;
+  line-height: 1.4;
+}
