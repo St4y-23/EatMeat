@@ -22,20 +22,6 @@ $(window).on('load', function () {
          .from(".about__image-box", { y: '10%', opacity: 0}, "-=1.5")
 
 
-  if (window.matchMedia("(min-width: 851px)").matches) {
-
-    // var link = Array.prototype.slice.call(document.querySelectorAll(".header__link")).reverse();
-
-    
-
-
-    console.log('large')
-  } else {
-
-
-    console.log('small')
-  }
-
 });
 
 
@@ -143,9 +129,22 @@ $(function () {
     let elementID = $(this).data("scroll");
     let elementOffset = $(elementID).offset().top;
 
-    $('.ham').toggleClass('active')
-    $('.header__menu').toggleClass('active')
-    $('body').toggleClass('active')
+    
+
+    if (window.matchMedia("(min-width: 1025px)").matches) {
+
+      $('.ham').toggleClass('active')
+      $('.header__menu').toggleClass('active')
+      
+      console.log('large')
+    } else {
+
+      $('.ham').toggleClass('active')
+      $('.header__menu').toggleClass('active')
+      $('body').toggleClass('active')
+  
+      console.log('small')
+    }
 
 
     $("html, body").animate({
